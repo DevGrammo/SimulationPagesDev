@@ -1,0 +1,12 @@
+.idea
+build/classes
+build/generated
+build/tmp
+.gradle
+docs/API
+docs/article
+docs/post
+docs/sitemap.txt
+docs/index.html
+TestFiles/ContentsTest/docs
+TestFiles/ContentsTestNoArticle/docs
