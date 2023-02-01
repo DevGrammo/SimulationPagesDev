@@ -1,0 +1,7 @@
+{
+  "title": "Example article",
+  "description": "This is just an example article",
+  "date": "13-01-2023",
+  "tags": ["D"],
+  "categories": ["development", "test"]
+}

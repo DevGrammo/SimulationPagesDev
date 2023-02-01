@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group 'DevGrammo.Simulation'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    apply plugin: 'application'
+    mainClass = 'devgrammo.siteBuilder.Application'
+}
+
+
+dependencies {
+    implementation 'org.yaml:snakeyaml:1.33'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+    implementation group: 'org.jsoup', name: 'jsoup', version: '1.7.2'
+
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+    filter {
+        //specific test class
+        includeTestsMatching "SiteDataTest"
+        includeTestsMatching "ResourcesTest"
+        includeTestsMatching "PublisherTest"
+        includeTestsMatching "ApplicationTest"
+        includeTestsMatching "siteBuilder.ApplicationTest.shouldBuildSite"
+    }
+}
+
+
+
+apply plugin: 'com.github.johnrengelman.shadow'
+apply plugin: 'java'

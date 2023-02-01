@@ -1,0 +1,12 @@
+{
+  "siteName": "site-name-test",
+  "user": "luca",
+  "siteDescription": "amazing web site",
+  "siteImage": "pictures/cover.png",
+  "timeZone": "Europe/Rome",
+  "email": "luca@luca.me",
+  "twitter": "@luca",
+  "url": "http://localhost:3000",
+  "root": "TestFiles/ContentsTest/docs",
+  "directory": "TestFiles/ContentsTestNoArticle"
+}
